@@ -1,0 +1,24 @@
+@import "colors";
+
+.page {
+    display: flex;
+    padding: 1rem 20%;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .image_container {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+
+        background-color: rgba($blue, 0.05);
+        & > * {
+            width: 500px;
+        }
+    }
+
+    h2 {
+        // background-color: rgba($blue, 0.05);
+        color: $blue;
+    }
+}

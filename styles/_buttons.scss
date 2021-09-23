@@ -1,0 +1,12 @@
+@mixin button {
+    transition: transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+    &:hover {
+        transform: translateY(0rem) scale(1.05);
+        // background: rgba($blue, 0.2);
+    }
+
+    &:active {
+        transform: translateY(0rem) scale(0.97);
+    }
+}

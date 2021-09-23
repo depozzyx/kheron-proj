@@ -1,0 +1,67 @@
+@import "colors";
+@import "buttons";
+
+.navbar {
+    background-color: rgba($primary-red, 0.05);
+
+    .navbar_brand {
+        @include button;
+
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        color: $white !important;
+        padding: 0.2rem 0.4rem;
+        background-color: $primary-violet;
+        border-radius: 0.2rem;
+    }
+
+    .navbar_item {
+        @include button;
+        padding: 0.2rem 0.4rem;
+
+        & > * {
+            // border: 0.1rem $primary-red solid;
+            border-radius: 0.2rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            color: $primary-red !important;
+            background-color: rgba(0, 0, 0, 0) !important;
+            //     margin: 0;
+            //     padding: 0;
+
+            &.active {
+                color: $white !important;
+                background-color: $primary-red !important;
+            }
+        }
+    }
+}
+
+.nav {
+    padding: 1rem 20%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($blue, 0.05);
+
+    & > * {
+        margin-right: 0.1rem;
+        margin-left: 0.1rem;
+        transition: transform 0.2s ease-out;
+        border-radius: 0.2rem;
+
+        &:hover {
+            transform: translateY(0rem) scale(1.05);
+            background: rgba($blue, 0.2);
+        }
+        &:active {
+            transform: translateY(0.3rem) scale(0.97);
+        }
+    }
+    .logo {
+        justify-self: start;
+        margin-right: auto;
+        .logo_link {
+            border: 0.1rem solid rgba($blue, 1);
+        }
+    }
+}
