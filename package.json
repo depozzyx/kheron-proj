@@ -1,5 +1,5 @@
 {
-    "name": "musicum-2-2",
+    "name": "kherson-proj",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -13,12 +13,14 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.36",
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "@fortawesome/react-fontawesome": "^0.1.15",
+        "autoprefixer": "^10.3.5",
         "bootstrap": "^4.6.0",
         "i18next": "^20.3.2",
         "jquery": "^3.6.0",
         "next": "11.0.0",
         "next-i18next": "^8.5.1",
         "nprogress": "^0.2.0",
+        "postcss-nested": "^5.0.6",
         "react": "17.0.2",
         "react-bootstrap": "^1.6.1",
         "react-dom": "17.0.2",

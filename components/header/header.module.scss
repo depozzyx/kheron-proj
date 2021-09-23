@@ -1,0 +1,41 @@
+.header {
+    --col-text: #f8f7ff;
+    --col-bg: #9381ff;
+
+    $col-bg: #9381ff;
+    $col-text: #f8f7ff;
+
+    padding: 20%;
+    margin-bottom: 100px;
+    height: calc(100vh + 20px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    background: linear-gradient(
+            90deg,
+            rgba($col-bg, 1) 0%,
+            rgba($col-bg, 0.8) 100%
+        ),
+        url("https://www.orangesmile.com/common/img_city_maps/kherson-map-1.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 0 20px 20px;
+
+    .header__title {
+        font-size: 400%;
+        font-weight: 800;
+
+        color: var(--col-text);
+    }
+    .header__subtitle {
+        color: #403a5f;
+    }
+    .header__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
