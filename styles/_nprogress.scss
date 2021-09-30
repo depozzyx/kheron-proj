@@ -1,4 +1,6 @@
-@import "colors";
+@import "_globals.scss";
+
+$col-progressbar: $col-white;
 
 /* Make clicks pass-through */
 #nprogress {
@@ -6,7 +8,7 @@
 }
 
 #nprogress .bar {
-    background: $blue;
+    background: $col-progressbar;
 
     position: fixed;
     z-index: 1031;
@@ -24,7 +26,7 @@
     right: 0px;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px $blue, 0 0 5px $blue;
+    box-shadow: 0 0 10px $col-progressbar, 0 0 5px $col-progressbar;
     opacity: 1;
 
     -webkit-transform: rotate(3deg) translate(0px, -4px);

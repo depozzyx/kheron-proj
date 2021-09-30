@@ -1,0 +1,32 @@
+@import "../../styles/_globals.scss";
+
+.lang_selector {
+    padding: 0 var(--padding-global);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $col-accent;
+    // border-radius: 0 0 20px 20px;
+    // border-radius: 10px;
+
+    h3 {
+        color: $col-blue;
+        margin: 0;
+
+        &:hover {
+            cursor: grab;
+        }
+    }
+
+    div {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        margin-left: auto;
+
+        button {
+            margin: 10px 0;
+            padding: 10px 20px;
+        }
+    }
+}

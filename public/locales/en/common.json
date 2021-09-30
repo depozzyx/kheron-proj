@@ -1,28 +1,12 @@
 {
-    "navbar": {
-        "index": "Main",
-        "tests": "Tests"
+    "header": {
+        "title": "Kherson",
+        "subtitle": "my city"
     },
-    "index": {
-        "website": "depozzyx.com",
-        "website_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente obcaecati expedita, accusamus dolorem officiis exercitationem. Consequuntur cum iste maiores explicabo atque, at aliquid error, voluptatem sapiente est alias illo?",
-        "about": "Contacts",
-        "about_description": "Telegram: @depozzyx\nInstagram: @depozzyx",
-
-        "title": "Depozzyx",
-        "subtitle": "Potato, based"
-    },
-
-    "bag": {
-        "title": "Bag",
-        "subtitle": "Portfolio?"
-    },
-
-    "layout": {
-        "navbarButtons": {
-            "milk": "Milk",
-            "dirt": "Dirt",
-            "bag": "Bag"
-        }
+    "lang": {
+        "select": "Language issues?",
+        "ua": "Ukrainian",
+        "en": "English",
+        "ru": "Russian"
     }
 }

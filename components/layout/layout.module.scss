@@ -1,0 +1,36 @@
+@import "../../styles/_globals.scss";
+
+.nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 var(--padding-global);
+    min-height: 10vh;
+
+    background-color: $col-blue;
+    color: $col-white;
+
+    .nav__back_button {
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: $col-white !important;
+        // border-bottom: 3px solid $col-white;
+        // border-top: 3px solid $col-white;
+        font-weight: 600;
+        padding: 10px;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .nav__title {
+        margin: 0;
+        margin-left: auto;
+        font-weight: 800;
+
+        &:hover {
+            cursor: grab;
+        }
+    }
+}

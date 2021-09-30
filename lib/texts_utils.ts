@@ -3,8 +3,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import i18n_config from "@/next-i18next.config";
 
 export const serverTexts = async (locale: string | undefined) => {
-    console.log("hi", locale);
-
     return await serverSideTranslations(
         locale || i18n_config.i18n.defaultLocale
     );

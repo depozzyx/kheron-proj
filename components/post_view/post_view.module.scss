@@ -1,0 +1,55 @@
+@import "@/styles/_globals.scss";
+
+.post_view {
+    // margin-top: 30px;
+    padding: 0 var(--padding-global);
+
+    section {
+        margin: -10px;
+        padding: 10px;
+        // background-color: rgba($col-blue, 0.4);
+        border-radius: 10px;
+        margin: 30px 0px;
+    }
+
+    .post_view__imgrow {
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        > * {
+            display: block !important;
+        }
+        img {
+            border-radius: 10px;
+            height: 200px;
+        }
+    }
+
+    h1 {
+        color: $col-blue;
+        font-weight: 800;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h6 {
+        color: $col-blue;
+        font-weight: 100;
+    }
+
+    p {
+        color: $col-accent;
+        margin: 0px 10px;
+        margin-bottom: 10px;
+    }
+
+    strong {
+        color: $col-blue;
+        font-weight: 800;
+    }
+}

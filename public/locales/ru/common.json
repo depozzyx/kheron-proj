@@ -1,33 +1,12 @@
 {
     "header": {
         "title": "Херсон",
-        "subtitle": "мое мисто бла бла бла"
+        "subtitle": "мой город бла блв"
     },
-
-    "navbar": {
-        "index": "Главная",
-        "tests": "Тесты"
-    },
-    "index": {
-        "website": "depozzyx.com",
-        "website_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente obcaecati expedita, accusamus dolorem officiis exercitationem. Consequuntur cum iste maiores explicabo atque, at aliquid error, voluptatem sapiente est alias illo?",
-        "about": "Контакты",
-        "about_description": "Telegram: @depozzyx\nInstagram: @depozzyx",
-
-        "title": "Депоззух",
-        "subtitle": "Картошка, база"
-    },
-
-    "bag": {
-        "title": "Сумка",
-        "subtitle": "Портфолио?"
-    },
-
-    "layout": {
-        "navbarButtons": {
-            "milk": "Молоко",
-            "dirt": "Земля",
-            "bag": "Сумка"
-        }
+    "lang": {
+        "select": "Языковой вопрос?",
+        "ua": "Украинский",
+        "en": "Английский",
+        "ru": "Русский"
     }
 }

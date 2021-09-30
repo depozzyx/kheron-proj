@@ -1,37 +1,36 @@
+@import "../../styles/_globals.scss";
+
 .header {
-    --col-text: #f8f7ff;
-    --col-bg: #9381ff;
-
-    $col-bg: #9381ff;
-    $col-text: #f8f7ff;
-
-    padding: 20%;
-    margin-bottom: 100px;
-    height: calc(100vh + 20px);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 
-    background: linear-gradient(
-            90deg,
-            rgba($col-bg, 1) 0%,
-            rgba($col-bg, 0.8) 100%
-        ),
-        url("https://www.orangesmile.com/common/img_city_maps/kherson-map-1.jpg");
+    // background: linear-gradient(
+    //         90deg,
+    //         rgba($col-bg, 1) 0%,
+    //         rgba($col-bg, 0.8) 100%
+    //     ),
+    //     url("https://www.orangesmile.com/common/img_city_maps/kherson-map-1.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 0 0 20px 20px;
+    background-color: $col-blue;
 
     .header__title {
-        font-size: 400%;
+        position: absolute;
+        font-size: 800%;
         font-weight: 800;
+        color: $col-white;
+        // transition: 0.3s;
 
-        color: var(--col-text);
+        &:hover {
+            cursor: grab;
+        }
     }
     .header__subtitle {
-        color: #403a5f;
+        color: $col-accent;
     }
     .header__nav {
         display: flex;

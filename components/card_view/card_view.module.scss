@@ -1,0 +1,51 @@
+@import "@/styles/_globals.scss";
+
+.card_view {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px var(--padding-global);
+    background-color: rgba($col-accent, 0.95);
+    gap: 40px;
+
+    .card {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.2fr 1fr;
+        border-radius: 10px;
+        margin: -10px;
+        padding: 10px;
+
+        background-color: rgba($col-accent, 0);
+        transition: 0.3s;
+
+        &:hover {
+            background-color: rgba($col-accent, 1);
+            cursor: pointer;
+        }
+
+        .card__image {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            border-radius: 10px;
+            // border: 4px solid $col-blue;
+            overflow: hidden;
+        }
+
+        .card__text {
+            h5 {
+                font-size: 150%;
+                color: $col-blue;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            p {
+                margin: 0;
+                color: $col-white;
+            }
+        }
+    }
+}
