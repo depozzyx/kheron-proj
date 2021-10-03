@@ -25,8 +25,6 @@ const Post: React.FC<PostProps> = ({ post, nextPostId, mdxSource }) => {
     const { post_id } = router.query;
     const { t } = useTexts();
 
-    const text_prefix = `posts.${post_id}`;
-
     useEffect(() => {
         if (typeof post == "undefined") {
             router.push("/posts/not_found");
@@ -36,7 +34,9 @@ const Post: React.FC<PostProps> = ({ post, nextPostId, mdxSource }) => {
     return (
         <>
             <Head>
-                <title>{t("posts.page_title_prefix") + post.title}</title>
+                <title>
+                    {t("posts.page_title_prefix") + (post ? post.title : "")}
+                </title>
             </Head>
             <Layout t={t} next_post={nextPostId} layoutType="posts">
                 {mdxSource && post && (
