@@ -11,24 +11,21 @@ import Layout from "@/components/layout";
 import PostView from "@/components/post_view/post_view";
 
 interface PostProps {
-    posts: { [key: string]: any };
+    post: PostData;
+    nextPostId: string;
     mdxSource: MDXRemoteSerializeResult | null;
 }
 
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
-import { getPostText } from "@/lib/posts";
+import { getPostData, getPostText, PostData } from "@/lib/posts";
 
-const Post: React.FC<PostProps> = ({ posts, mdxSource }) => {
+const Post: React.FC<PostProps> = ({ post, nextPostId, mdxSource }) => {
     const router = useRouter();
     const { post_id } = router.query;
     const { t } = useTexts();
 
     const text_prefix = `posts.${post_id}`;
-    const post = useMemo(
-        () => (posts && typeof post_id === "string" ? posts[post_id] : {}),
-        [post_id, posts]
-    );
 
     useEffect(() => {
         if (typeof post == "undefined") {
@@ -36,25 +33,13 @@ const Post: React.FC<PostProps> = ({ posts, mdxSource }) => {
         }
     }, [post, router]);
 
-    const getNextPost = () => {
-        if (typeof post_id != "string") return "";
-
-        const keys = Object.keys(posts);
-        const prev_index = keys.findIndex((elem) => elem == post_id);
-        const next_index = (prev_index + 1) % keys.length;
-
-        return keys[next_index];
-    };
-
     return (
         <>
             <Head>
-                <title>
-                    {t("posts.title_prefix") + t(`${text_prefix}.title`)}
-                </title>
+                <title>{t("posts.page_title_prefix") + post.title}</title>
             </Head>
-            <Layout t={t} next_post={getNextPost()}>
-                {mdxSource && (
+            <Layout t={t} next_post={nextPostId} layoutType="posts">
+                {mdxSource && post && (
                     <PostView
                         t={t}
                         post_id={typeof post_id === "string" ? post_id : ""}
@@ -70,17 +55,30 @@ const Post: React.FC<PostProps> = ({ posts, mdxSource }) => {
 export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
     const post_id = params && params.post_id?.toString();
 
+    // Getting translations for i18n
     const translations = await serverTexts(locale);
+
+    // Getting mdxSource
     const postText = post_id
         ? await getPostText(require("fs").promises, post_id, locale)
         : null;
-
     const mdxSource = postText ? await serialize(postText) : null;
+
+    // Getting postData object
+    // @ts-ignore
+    const post = post_id && (await getPostData(postText, posts[post_id]));
+
+    // Getting nextPostId
+    const postIds = Object.keys(posts);
+    const postIndex = postIds.findIndex((elem) => elem == post_id);
+    const nextPostIndex = (postIndex + 1) % postIds.length;
+    const nextPostId = postIds[nextPostIndex];
 
     return {
         props: {
             ...translations,
-            posts,
+            post,
+            nextPostId,
             mdxSource,
         },
     };

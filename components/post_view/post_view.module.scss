@@ -3,6 +3,7 @@
 .post_view {
     // margin-top: 30px;
     padding: 0 var(--padding-global);
+    padding-bottom: 45px;
 
     section {
         margin: -10px;
@@ -35,11 +36,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 200%;
     }
 
     h6 {
         color: $col-blue;
         font-weight: 100;
+        font-size: 100%;
     }
 
     p {

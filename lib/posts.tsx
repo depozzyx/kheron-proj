@@ -1,4 +1,4 @@
-import { faFill, faInfo, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee, faInfo, faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -89,7 +89,7 @@ export type Tag = "link" | "about" | "";
 const tagToIcon = {
     link: faLink,
     about: faInfo,
-    "": faFill,
+    "": faCoffee,
 };
 
 const getIconFromTag = (tag: Tag) => {

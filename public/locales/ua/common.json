@@ -20,5 +20,16 @@
         "back_button": "На головну",
         "title": "Херсон",
         "next_button": "Наступний пост"
+    },
+    "posts": {
+        "page_title_prefix": "Пост - "
+    },
+    "footer": {
+        "title": "Херсон • 2021",
+        "feedback": "Вiдгуки",
+        "back_button": "На головну"
+    },
+    "errors": {
+        "provide_all_data": "Будь ласка, заповнiть усi поля"
     }
 }

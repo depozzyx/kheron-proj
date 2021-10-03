@@ -29,7 +29,10 @@ const CardView: React.FC<CardViewProps> = ({ t, posts }) => {
                 subtitle={"наш iнший проект"}
                 href={`https://kherson-proj.herokuapp.com/#/`}
                 tag={"link"}
-                // image={posts[key].image}
+                image={{
+                    alt: "Iсторичнi постатi в назвах вулиць Херсону",
+                    data: getImage("kherson-proj-1.png"),
+                }}
             />
         </section>
     );

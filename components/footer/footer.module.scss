@@ -1,6 +1,56 @@
 @import "../../styles/_globals.scss";
 
 .footer {
-    background-color: $col-accent;
-    height: 50vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+
+    &.footer--accent {
+        background-color: $col-accent;
+        .footer__button {
+            border-color: $col-blue;
+            color: $col-blue;
+        }
+
+        .footer__title {
+            color: $col-blue;
+        }
+    }
+
+    &.footer--blue {
+        background-color: $col-blue;
+        .footer__button {
+            border-color: $col-white;
+            color: $col-white;
+        }
+        // .footer__title {
+        //     color: $col-accent;
+        // }
+    }
+
+    .footer__button {
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        border: 2px solid;
+        font-weight: 800;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .footer__title {
+        font-size: 170%;
+        font-weight: 800;
+        color: $col-white;
+
+        &:hover {
+            cursor: grab;
+        }
+    }
 }

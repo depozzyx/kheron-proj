@@ -14,7 +14,7 @@
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "@fortawesome/react-fontawesome": "^0.1.15",
         "autoprefixer": "^10.3.5",
-        "bootstrap": "^4.6.0",
+        "axios": "^0.22.0",
         "framer-motion": "^4.1.17",
         "i18next": "^20.3.2",
         "jquery": "^3.6.0",

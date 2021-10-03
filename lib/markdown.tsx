@@ -1,16 +1,32 @@
+import { motion } from "framer-motion";
 import Image from "next/dist/client/image";
 
 import { getIconFromTag, getImage, Tag } from "@/lib/posts";
 import styles from "@/components/post_view/post_view.module.scss";
 
-const CustomImg = ({ image_file, image_link, alt }: any) => {
+const CustomPic = ({ image_file, image_link, alt }: any) => {
     return (
-        <Image
-            src={image_link || getImage(image_file)}
-            key={image_file}
-            alt={alt}
-            objectFit="scale-down"
-        />
+        <motion.div
+            whileHover={{ scale: 1.1, cursor: "nesw-resize" }}
+            whileTap={{ scale: 2 }}
+        >
+            <Image
+                src={image_link || getImage(image_file)}
+                key={image_file}
+                alt={alt}
+                objectFit="scale-down"
+            />
+        </motion.div>
+    );
+};
+const CustomImg = (props: any) => {
+    return (
+        <motion.div
+            whileHover={{ scale: 1.1, cursor: "nesw-resize" }}
+            whileTap={{ scale: 2 }}
+        >
+            <img {...props} />
+        </motion.div>
     );
 };
 const CustomImgRow = (props: any) => (
@@ -26,7 +42,8 @@ const getPostComponents = (postTag: Tag) => {
     );
 
     return {
-        pic: CustomImg,
+        pic: CustomPic,
+        img: CustomImg,
         imgrow: CustomImgRow,
         title: CustomTitle,
         subtitle: CustomSubtitle,

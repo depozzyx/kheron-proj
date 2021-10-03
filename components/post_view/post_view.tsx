@@ -1,13 +1,13 @@
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 
 import { getPostComponents } from "@/lib/markdown";
-import { Tag } from "@/lib/posts";
+import { PostData } from "@/lib/posts";
 import styles from "./post_view.module.scss";
 
 interface PostViewProps {
     t: (key: string) => string;
     post_id: string;
-    post_object: { tag: Tag };
+    post_object: PostData;
     mdxSource: MDXRemoteSerializeResult;
 }
 

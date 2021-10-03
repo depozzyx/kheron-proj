@@ -1,9 +1,7 @@
 @import "nprogress";
 @import "buttons";
-@import "colors";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap");
 
 html,
 body {
@@ -34,4 +32,35 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 5px 0;
+}
+
+button,
+input {
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.svg-inline--fa {
+    transition: 0.5s;
+    &:hover {
+        cursor: crosshair;
+        transform: rotate(360deg);
+    }
+    &:active {
+        transform: rotate(1080deg);
+    }
 }
