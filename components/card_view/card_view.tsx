@@ -25,12 +25,12 @@ const CardView: React.FC<CardViewProps> = ({ t, posts }) => {
                 ))}
 
             <Card
-                title={"Iсторичнi постатi в назвах вулиць Херсону"}
-                subtitle={"наш iнший проект"}
+                title={t("posts.kherson-proj-1.title")}
+                subtitle={t("posts.kherson-proj-1.subtitle")}
                 href={`https://kherson-proj.herokuapp.com/#/`}
                 tag={"link"}
                 image={{
-                    alt: "Iсторичнi постатi в назвах вулиць Херсону",
+                    alt: t("posts.kherson-proj-1.title"),
                     data: getImage("kherson-proj-1.png"),
                 }}
             />

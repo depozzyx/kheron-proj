@@ -1,33 +1,20 @@
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState, useRef } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { getStaticPropsOnlyTexts } from "@/lib/texts_utils";
-import { useTexts } from "@/lib/hooks";
-import Layout from "@/components/layout";
-import styles from "@/styles/feedback.module.scss";
-import uiButtonStyles from "@/components/UI/button/button.module.scss";
 import {
     faExclamationTriangle,
     faPen,
     faPenAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-class CustomDate extends Date {
-    yyyymmdd = function () {
-        // @ts-ignore
-        const self = this;
-
-        const mm = self.getMonth() + 1; // getMonth() is zero-based
-        const dd = self.getDate();
-        return [
-            (dd > 9 ? "" : "0") + dd,
-            (mm > 9 ? "" : "0") + mm,
-            self.getFullYear(),
-        ].join(".");
-    };
-}
+import { getStaticPropsOnlyTexts } from "@/lib/texts_utils";
+import { useTexts } from "@/lib/hooks";
+import Layout from "@/components/layout";
+import styles from "@/styles/feedback.module.scss";
+import uiButtonStyles from "@/components/UI/button/button.module.scss";
+import { Feedbacks } from "@/components/pages/feedback";
+import { FeedbacksFunctions } from "@/components/pages/feedback/feedbacks";
 
 const errorVariants = {
     start: { y: -100 },
@@ -41,15 +28,10 @@ const transitionConfig = {
     stiffness: 300,
 };
 
-interface Feedback {
-    author: string;
-    text: string;
-    date: CustomDate;
-}
-
 export default function Feed() {
     const { t } = useTexts();
 
+    const feedbacksRef = useRef<FeedbacksFunctions>();
     const [text, setText] = useState<string>("");
     const [author, setAuthor] = useState<string>("");
     const [error, setError] = useState<any>("");
@@ -57,7 +39,7 @@ export default function Feed() {
         e.preventDefault();
         console.log(text);
         await addFeedback();
-        await updateFeedbacks();
+        await feedbacksRef.current?.updateFeedbacks();
     };
 
     const addFeedback = async () => {
@@ -83,21 +65,6 @@ export default function Feed() {
         }
     };
 
-    const [feedbacks, setFeedbacks] = useState<Feedback[]>([]);
-    const updateFeedbacks = async () => {
-        const res = await axios.get("/api/feedback/get");
-        const rawFeedbacks: any = res.data;
-        const feedbacks = rawFeedbacks.map((feedback: Feedback) => {
-            feedback.date = new CustomDate(feedback.date);
-            return feedback;
-        });
-        setFeedbacks(feedbacks);
-    };
-
-    useEffect(() => {
-        updateFeedbacks();
-    }, []);
-
     return (
         <Layout
             t={t}
@@ -107,30 +74,16 @@ export default function Feed() {
         >
             <section>
                 <h1>
-                    feedback
+                    {t("feedback.title")}
                     <FontAwesomeIcon icon={faPenAlt} size={"xs"} />
                 </h1>
-                <h6>Nen nfnf fff nnfn</h6>
+                <h6>{t("feedback.subtitle")}</h6>
             </section>
-            <section className={styles.feedback__items}>
-                {feedbacks.map((feedback, i) => (
-                    <div className={styles.feedback__item} key={i}>
-                        <div className={styles.item__head}>
-                            <p className={styles.item__author}>
-                                {feedback.author}
-                            </p>
-                            <p className={styles.item__date}>
-                                {feedback.date.yyyymmdd()}
-                            </p>
-                        </div>
-                        <p className={styles.item__text}>{feedback.text}</p>
-                    </div>
-                ))}
-            </section>
+            <Feedbacks ref={feedbacksRef} />
             <form onSubmit={(e) => submitFeedback(e)}>
-                <h2>Send_feedback</h2>
+                <h2>{t("feedback.send_title")}</h2>
                 <input
-                    placeholder={"Author"}
+                    placeholder={t("feedback.send_author")}
                     value={author}
                     type="text"
                     onChange={(e) => {
@@ -138,7 +91,8 @@ export default function Feed() {
                     }}
                 />
                 <textarea
-                    name="Feedback text"
+                    name={t("feedback.send_text")}
+                    placeholder={t("feedback.send_text")}
                     cols={30}
                     rows={10}
                     value={text}
@@ -165,7 +119,7 @@ export default function Feed() {
                         uiButtonStyles.default,
                     ].join(" ")}
                 >
-                    <FontAwesomeIcon icon={faPen} /> Submit
+                    <FontAwesomeIcon icon={faPen} /> {t("feedback.send_button")}
                 </motion.button>
             </form>
         </Layout>

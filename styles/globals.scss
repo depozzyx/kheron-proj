@@ -14,8 +14,14 @@ body {
         sans-serif;
 
     --padding-global: 20%;
-    @media screen and (max-width: 1000px) {
-        --padding-global: 0%;
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
+        --padding-global: 10%;
+    }
+    @media screen and (min-width: 400px) and (max-width: 800px) {
+        --padding-global: 3%;
+    }
+    @media screen and (max-width: 400px) {
+        --padding-global: 1%;
     }
 }
 

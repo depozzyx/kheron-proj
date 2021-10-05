@@ -6,17 +6,11 @@ import styles from "./post_view.module.scss";
 
 interface PostViewProps {
     t: (key: string) => string;
-    post_id: string;
     post_object: PostData;
     mdxSource: MDXRemoteSerializeResult;
 }
 
-const PostView: React.FC<PostViewProps> = ({
-    t,
-    post_id,
-    post_object,
-    mdxSource,
-}) => {
+const PostView: React.FC<PostViewProps> = ({ t, post_object, mdxSource }) => {
     const components = getPostComponents(post_object.tag);
 
     return (

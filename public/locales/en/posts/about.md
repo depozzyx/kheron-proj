@@ -1,33 +1,33 @@
 <section>
-    <title>Про Херсон</title>
-    <subtitle>або місто, яке обов’язково Вам сподобається</subtitle>
+    <title> About Kherson </title>
+    <subtitle> or a city you will love </subtitle>
 </section>
 
 <imgrow>
-    <pic image_file="flag.jpg" alt="Флаг Херсону" />
-    <img src="https://find-way.com.ua/components/com_jshopping/files/img_products/thumb_DJI_0600-326.jpg" alt="Набережная" />
+    <pic image_file="flag.jpg" alt="Flag of Kherson" />
+    <img src = "https://find-way.com.ua/components/com_jshopping/files/img_products/thumb_DJI_0600-326.jpg" alt = "Набережная" />
 </imgrow>
 
-**Херсон** - місто, яке обов’язково Вам сподобається. Воно завжди привабливе, домашнє і для більшості мешканців - дійсно рідне. На відміну від того ж Миколаєва, який дуже протяжний і дістатися з одного місця в інше досить важко, Херсон досить _**компактний**_, його можна за кілька днів обходити пішки. Мешканці поділяють місто на кілька районів: “Воєнка”, ”Млини”, “Забалка”, “Кіндійка”.
+** Kherson ** is a city that you will definitely like. It is always attractive, homely and for most residents - really native. Unlike the same Nikolaev which is very long and to get from one place to another is difficult enough, Kherson is rather _ ** compact ** _, it can be bypassed on foot in some days. Residents divide the city into several districts: "Voenka", "Mlyny", "Zabalka", "Kindiyka".
 
-Це місто завжди нагодує Вас чимось _**смачним**_. Звичайно, обов’язково тут треба скуштувати херсонських кавунів, різноманітні страви з баклажанів, риби та помідорів.
+This city will always feed you something _ ** delicious ** _. Of course, you should definitely try Kherson watermelons, various dishes of eggplant, fish and tomatoes.
 
-На сьогодні **Херсон** вважається _**культурно-торговельним**_ містом. Торговельним він є завдяки морському і річковому порту, морській і залізничній митниці. Цим мешканці, власне, і заробляють на життя. Херсон славиться морською академією, морським коледжем, морською школою.
+Today ** Kherson ** is considered _ ** cultural and trade ** _ city. It is commercial thanks to the sea and river port, sea and railway customs. This, in fact, residents earn a living. Kherson is famous for its naval academy, naval college, and naval school.
 
 <imgrow>
-    <img src="https://khers-on.com/wp-content/uploads/2021/01/khersonskiy-kot.jpg" alt="Кот"/>
-    <img src="https://khers-on.com/wp-content/uploads/2021/01/khersonskiy-dvorik.jpg" alt="Фасад дома"/>
+    <img src = "https://khers-on.com/wp-content/uploads/2021/01/khersonskiy-kot.jpg" alt = "Кот" />
+    <img src = "https://khers-on.com/wp-content/uploads/2021/01/khersonskiy-dvorik.jpg" alt = "Facade of the house" />
 </imgrow>
 
-А ще у **Херсоні** знаходився найбільший у Європі _**бавовняний комбінат**_, на суднобудівних заводах Херсона було вперше в світі застосоване будівництво сухих доків. І випускались вони аж до часів перебудови. Сьогодні стоїть питання, щоб поновити це все. **Херсон** почав свій індустріальний розвиток у 60 роки, коли було побудовано найбільший в Європі бавовняний комбінат. Тут випускали рушники, _**бавовняні тканини**_, які продавались у всьому радянському союзі і навіть за його межами. При чому на союзний ринок потрапляли уже неліквідні товари, в основному, вся продукція йшла на експорт. Херсонці дізнавалися про, те що в них такі речі випускають, випадково, коли якійсь господині вдавалось роздобути якийсь поганенький шмат тканини. Зараз комбінат, на жаль, зруйнований, а на його місці збудували розважальний центр.
+And in ** Kherson ** there was the largest in Europe _ ** cotton factory ** _, at the shipyards of Kherson the construction of dry docks was used for the first time in the world. And they were issued until the time of perestroika. Today there is a question to renew it all. ** Kherson ** began its industrial development in 60 years, when the largest cotton mill in Europe was built. They produced towels, _ ** cotton fabrics ** _, which were sold throughout the Soviet Union and even beyond. At the same time, illiquid goods entered the Union market, mostly all products were exported. The people of Kherson learned about the fact that they produce such things by chance, when a housewife managed to get some bad piece of fabric. Now the plant, unfortunately, is destroyed, and an entertainment center was built in its place.
 
-**Херсон** завжди був жіночим містом. Багато чоловіків тут моряки, які постійно десь у плаванні, тому в місті залишались одні жінки. На самому текстильному комбінаті працювало _**30 тисяч жінок**_. Крім того, ще раніше навколо міста побудували фортеці, де були, звичайно,переважно чоловіки, а для того, щоб вони не тікали, треба було, щоб вони одружувалися. І тоді з ініціативи великого стратега Потьомкіна у Херсон на усілякі ярмарки та гулянки почали запрошувати найгарніших дівчат з околиць. А ті обирали тут найкращих хлопців. Місцеві навіть іноді хваляться, що в них найбільше красивих дівчат.
+** Kherson ** has always been a women's city. Many men here are sailors who are constantly somewhere sailing, so only women remained in the city. _ ** 30 thousand women ** _ worked at the textile factory itself. In addition, fortresses were built around the city earlier, where, of course, there were mostly men, and in order for them not to run away, they had to get married. And then, on the initiative of the great strategist Potemkin, the most beautiful girls from the neighborhood began to be invited to various fairs and parties in Kherson. And they chose the best guys here. Locals even sometimes boast that they have the most beautiful girls.
 
-**Культурним центром** міста є _**театр імені Куліша**_. Херсонці дуже люблять театр і придбати квиток у день вистави досить важко. Зал завжди заповнений, при чому, протягом дня може бути навіть кілька вистав: у великому залі і в театрі-кафе. У останньому знаходиться просторе фойє, стоять столики, люди можуть пити каву і дивитись виставу. У всіх святах, що проходять у Херсоні приймають участь актори. Ще одним культурним осередком міста є бібліотека, де проводяться різноманітні заходи.
-У Херсоні є свій фестиваль - Мальпомена Таврії у травні.
+** The cultural center ** of the city is _ ** Kulish Theater ** _. Kherson residents love the theater and it is quite difficult to buy a ticket on the day of the show. The hall is always full, and during the day there may even be several performances: in the great hall and in the theater-cafe. In the latter there is a spacious lobby, there are tables, people can drink coffee and watch the show. Actors take part in all the festivities held in Kherson. Another cultural center of the city is the library, where various events are held.
+Kherson has its own festival - Malpomene of Tavria in May.
 
-Своєрідним “musthave” у Херсоні є відвідання _**морського порта**_ та Потьомкінського острова. Особливо влітку, адже там є пляж і навіть невеличкий зоопарк. Обов’язково треба здійснити подорож по Дніпру на катері. З води все місто наче на долоні. Також варто побувати у грецькому передмісті, побродити сквериками і двориками, відчути дух Херсону - торговельний, далекий від столиці, розмірений побут провінції.
+A kind of "musthave" in Kherson is a visit to the _ ** seaport ** _ and Potemkin Island. Especially in summer, because there is a beach and even a small zoo. Be sure to take a boat trip on the Dnieper. From the water the whole city is in the palm of your hand. It is also worth visiting the Greek suburbs, wandering the squares and courtyards, feel the spirit of Kherson - trade, far from the capital, measured life of the province.
 
-Багато відомих людей побувало у Херсоні або пов’язані з ним певним чином. От, наприклад, якби не вилікували херсонці _**Чапаєва**_, то не було б у нас такого персонажа в історії, адже він був поранений під час Першої Світової війни і доліковувався саме в Херсоні. Побував тут зокрема і Максим Горький. Він заступився був за жінку, до якої причепилися якісь нечемні люди, в результаті чого теж надовго застряг у херсонській лікарні. На жаль, такі прикрі історії тут і досі трапляються, адже з часів, коли будували фортецю і сюди звозили каторжників, утворився своєрідний осередок людей асоціального типу.
+Many famous people have visited or are connected with Kherson in some way. For example, if the people of Kherson _ ** Chapayev ** _ had not been cured, we would not have had such a character in history, because he was wounded during the First World War and was treated in Kherson. Maxim Gorky, in particular, visited here. He stood up for a woman who was clung to by some rude people, as a result of which he was also stuck in a Kherson hospital for a long time. Unfortunately, such annoying stories still happen here, because since the time when the fortress was built and convicts were brought here, a kind of center of people of the antisocial type was formed.
 
-Як і будь-яке інше місто Херсон має _**легенди**_ і _**містичні історії**_. У нього навіть є свій привид. За часів громадянської війни 1917-1918 рр тут було спокійно, а потім на зміну Української держави прийшли більшовики. Місцеві побоювались їхнього вторгнення і закутали пам’ятник Потьомкіну, що стояв у скверику біля театру, у мішковину. Так він простояв досить довго, роки півтора. І з тих часів цей пам’ятник називають Херсонським привидом.
+Like any other city Kherson has _ ** legends ** _ and _ ** mystical stories ** _. He even has his own ghost. During the civil war of 1917-1918 it was quiet here, and then the Bolsheviks replaced the Ukrainian state. Locals feared their invasion and wrapped a monument to Potemkin, which stood in the garden near the theater, in sacking. So he stood for a long time, a year and a half. And since then, this monument is called the Kherson ghost.

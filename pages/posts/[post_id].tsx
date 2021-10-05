@@ -1,37 +1,46 @@
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { GetStaticProps } from "next";
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 import { useTexts } from "@/lib/hooks";
 import { serverTexts } from "@/lib/texts_utils";
 import posts from "@/public/posts";
-
+import styles from "@/components/layout/layout.module.scss";
+import { getPostData, getPostText, PostData } from "@/lib/posts";
 import Layout from "@/components/layout";
 import PostView from "@/components/post_view/post_view";
 
 interface PostProps {
-    post: PostData;
+    post: PostData | undefined;
     nextPostId: string;
     mdxSource: MDXRemoteSerializeResult | null;
 }
 
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
-import { getPostData, getPostText, PostData } from "@/lib/posts";
+// yw
+// 0
+// vep
 
-const Post: React.FC<PostProps> = ({ post, nextPostId, mdxSource }) => {
+const Post: React.FC<PostProps> = ({
+    post,
+    nextPostId,
+    mdxSource,
+    ...props
+}) => {
     const router = useRouter();
-    const { post_id } = router.query;
     const { t } = useTexts();
 
+    console.log({ post, props });
+
     useEffect(() => {
-        if (typeof post == "undefined") {
+        if (post === null) {
             router.push("/posts/not_found");
         }
-    }, [post, router]);
+    }, [post, router, props]);
 
-    return (
+    return post ? (
         <>
             <Head>
                 <title>
@@ -40,14 +49,15 @@ const Post: React.FC<PostProps> = ({ post, nextPostId, mdxSource }) => {
             </Head>
             <Layout t={t} next_post={nextPostId} layoutType="posts">
                 {mdxSource && post && (
-                    <PostView
-                        t={t}
-                        post_id={typeof post_id === "string" ? post_id : ""}
-                        post_object={post}
-                        mdxSource={mdxSource}
-                    />
+                    <PostView t={t} post_object={post} mdxSource={mdxSource} />
                 )}
             </Layout>
+        </>
+    ) : (
+        <>
+            <nav className={styles["nav--fake"]}>
+                <span>-=-</span>
+            </nav>
         </>
     );
 };
@@ -65,8 +75,9 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
     const mdxSource = postText ? await serialize(postText) : null;
 
     // Getting postData object
-    // @ts-ignore
-    const post = post_id && (await getPostData(postText, posts[post_id]));
+    const post =
+        // @ts-ignore
+        post_id && postText && (await getPostData(postText, posts[post_id]));
 
     // Getting nextPostId
     const postIds = Object.keys(posts);
@@ -77,7 +88,7 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
     return {
         props: {
             ...translations,
-            post,
+            post: post || null,
             nextPostId,
             mdxSource,
         },

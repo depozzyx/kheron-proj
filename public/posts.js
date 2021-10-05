@@ -1,4 +1,11 @@
 const posts = {
+    about: {
+        tag: "about",
+    },
+    intresting: {
+        tag: "",
+        link: "https://ua.igotoworld.com/ru/article/730_herson-kuda-poiti-chto-posmotret.htm",
+    },
     arbuz: {
         tag: "",
     },
@@ -7,9 +14,6 @@ const posts = {
     },
     amogus: {
         tag: "link",
-    },
-    about: {
-        tag: "about",
     },
 };
 

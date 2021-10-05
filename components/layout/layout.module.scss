@@ -36,3 +36,22 @@
         }
     }
 }
+
+.nav--fake {
+    min-height: 5vh;
+    background: $col-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $col-white;
+    font-size: 180%;
+    font-weight: 800;
+    transition: 1s;
+
+    span {
+        transition: 1s;
+    }
+    span::after {
+        transform: rotate(100deg);
+    }
+}

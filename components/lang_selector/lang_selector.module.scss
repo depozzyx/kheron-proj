@@ -25,6 +25,16 @@
         gap: 10px;
         margin-left: auto;
 
+        @media screen and (max-width: 601px) {
+            $gap: 5px;
+            grid-auto-flow: row;
+            gap: $gap;
+            padding: $gap 0 !important;
+            button {
+                margin: 0px !important;
+            }
+        }
+
         button {
             margin: 10px 0;
             padding: 10px 20px;

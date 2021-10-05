@@ -22,7 +22,11 @@
         "next_button": "Наступний пост"
     },
     "posts": {
-        "page_title_prefix": "Пост - "
+        "page_title_prefix": "Пост - ",
+        "kherson-proj-1": {
+            "title": "Iсторичнi постатi в назвах вулиць Херсону",
+            "subtitle": "наш iнший проект"
+        }
     },
     "footer": {
         "title": "Херсон • 2021",
@@ -31,5 +35,14 @@
     },
     "errors": {
         "provide_all_data": "Будь ласка, заповнiть усi поля"
+    },
+
+    "feedback": {
+        "title": "Вiдгуки",
+        "subtitle": "Тут вiдображенi усi вiдгуки про наш сайт. Ви також можете додати свiй!",
+        "send_title": "Надiслати вiдгук",
+        "send_button": "Надiслати",
+        "send_author": "Ваше iм`я",
+        "send_text": "Текст вашого вiдгуку"
     }
 }

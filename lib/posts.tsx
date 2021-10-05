@@ -75,10 +75,17 @@ const getPostText = async (
     locale: string | undefined
 ) => {
     locale ||= "ua";
-    return await fs.readFile(
-        process.cwd() + `/public/locales/${locale}/posts/${post_id}.md`,
-        "utf8"
-    );
+    let content;
+    try {
+        content = await fs.readFile(
+            process.cwd() + `/public/locales/${locale}/posts/${post_id}.md`,
+            "utf8"
+        );
+    } catch (error: any) {
+        content = null;
+        console.log(`Probably ENONT ${error}`);
+    }
+    return content;
 };
 
 const getImage = (image_file: string) => {
