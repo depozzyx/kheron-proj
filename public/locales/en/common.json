@@ -1,12 +1,48 @@
 {
+    "index": {
+        "title": "Kherson - a site about our city"
+    },
     "header": {
         "title": "Kherson",
-        "subtitle": "my city"
+        "subtitle": "my city blah blah blah"
+    },
+    "404": {
+        "title": "404",
+        "go_to_index": "go to head"
     },
     "lang": {
-        "select": "Language issues?",
+        "select": "Language question?",
         "ua": "Ukrainian",
         "en": "English",
         "ru": "Russian"
+    },
+    "layout": {
+        "back_button": "Back",
+        "title": "Kherson",
+        "next_button": "Next post"
+    },
+    "posts": {
+        "page_title_prefix": "Post - ",
+        "kherson-proj-1": {
+            "title": "Historical figures in the names of streets of Kherson",
+            "subtitle": "our other project"
+        }
+    },
+    "footer": {
+        "title": "Kherson • 2021",
+        "feedback": "Feedback",
+        "back_button": "Back"
+    },
+    "errors": {
+        "provide_all_data": "Please fill in all fields"
+    },
+
+    "feedback": {
+        "title": "Reviews",
+        "subtitle": "All reviews about our site are displayed here. You can also add your own!",
+        "send_title": "Send feedback",
+        "send_button": "Send",
+        "send_author": "Your name",
+        "send_text": "The text of your response"
     }
 }

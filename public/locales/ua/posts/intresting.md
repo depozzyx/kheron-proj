@@ -4,7 +4,7 @@
 </section>
 
 <imgrow>
-    <pic image_file="intresting.jpg" alt="Потьомкін" />
+    <pic image_file="intresting.png" alt="Потьомкін" />
     <img src = "https://ua.igotoworld.com/frontend/webcontent/images/tours/1929764_800x600_HersonEkaterininskiisobor.jpg" alt = "Собор" />
 </imgrow>
 

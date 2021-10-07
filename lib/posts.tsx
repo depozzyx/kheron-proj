@@ -1,4 +1,9 @@
-import { faCoffee, faInfo, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+    faCoffee,
+    faInfo,
+    faLink,
+    faLocationArrow,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -92,10 +97,11 @@ const getImage = (image_file: string) => {
     return require("@/public/media/" + image_file);
 };
 
-export type Tag = "link" | "about" | "";
+export type Tag = "link" | "about" | "location" | "";
 const tagToIcon = {
     link: faLink,
     about: faInfo,
+    location: faLocationArrow,
     "": faCoffee,
 };
 
