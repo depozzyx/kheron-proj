@@ -1,6 +1,6 @@
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 
-import { getPostComponents } from "@/lib/markdown";
+import { getPostComponents } from "@/components/PAGES/post/markdown";
 import { PostData } from "@/lib/posts";
 import styles from "./post_view.module.scss";
 

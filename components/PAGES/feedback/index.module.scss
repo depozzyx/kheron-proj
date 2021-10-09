@@ -1,0 +1,22 @@
+@import "../../../styles/_globals.scss";
+
+.feedback_layout {
+    padding: 30px var(--padding-global);
+    margin: 10px;
+
+    h1 {
+        font-weight: 800;
+        color: $col-blue;
+        font-size: 200%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h6 {
+        color: $col-blue;
+        font-weight: 100;
+        font-size: 100%;
+        margin-bottom: 30px;
+    }
+}

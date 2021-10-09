@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/dist/client/image";
 
 import { getIconFromTag, getImage, Tag } from "@/lib/posts";
-import styles from "@/components/post_view/post_view.module.scss";
+import styles from "./post_view.module.scss";
 
 const CustomPic = ({ image_file, image_link, alt }: any) => {
     return (

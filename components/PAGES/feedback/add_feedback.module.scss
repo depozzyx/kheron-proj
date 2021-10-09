@@ -1,0 +1,40 @@
+@import "../../../styles/_globals.scss";
+
+.add_feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    margin: 10px -20px;
+    margin-top: 30px;
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 3px solid $col-blue;
+
+    .add_feedback__author {
+        max-width: min(100%, 300px);
+    }
+
+    .add_feedback__title {
+        color: $col-blue;
+        margin: 0;
+    }
+
+    .add_feedback__text {
+        font-family: inherit;
+    }
+
+    .add_feedback__error {
+        color: $col-accent;
+        text-align: center;
+    }
+
+    .add_feedback__button {
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 10px 20px;
+        font-weight: 800;
+        font-size: 100%;
+    }
+}

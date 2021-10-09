@@ -1,6 +1,4 @@
 @import "nprogress";
-@import "buttons";
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap");
 
 html,
@@ -12,7 +10,9 @@ body {
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
+}
 
+:root {
     --padding-global: 20%;
     @media screen and (min-width: 800px) and (max-width: 1000px) {
         --padding-global: 10%;

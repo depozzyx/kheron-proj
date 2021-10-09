@@ -11,8 +11,8 @@ import LayoutButton from "./layout_button";
 interface LayoutProps {
     t: (s: string) => string;
     children: React.ReactNode | string;
-    next_post: string | null;
     layoutType: "posts" | "feedback";
+    next_post?: string | null | undefined;
     className?: string;
 }
 

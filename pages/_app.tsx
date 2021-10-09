@@ -1,5 +1,4 @@
-import "@/styles/globals.scss";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "@/styles/_app.scss";
 import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 

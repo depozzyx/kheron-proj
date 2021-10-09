@@ -11,7 +11,7 @@ import posts from "@/public/posts";
 import styles from "@/components/layout/layout.module.scss";
 import { getPostData, getPostText, PostData } from "@/lib/posts";
 import Layout from "@/components/layout";
-import PostView from "@/components/post_view/post_view";
+import { PostView } from "@/components/PAGES/post";
 
 interface PostProps {
     post: PostData | undefined;

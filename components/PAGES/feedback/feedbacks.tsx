@@ -59,4 +59,4 @@ const Feedbacks = forwardRef<FeedbacksFunctions, FeedbacksProps>(({}, ref) => {
 
 Feedbacks.displayName = "Feedbacks";
 
-export { Feedbacks };
+export default Feedbacks;
