@@ -5,7 +5,7 @@ import { faPenAlt } from "@fortawesome/free-solid-svg-icons";
 
 import { getStaticPropsOnlyTexts } from "@/lib/texts_utils";
 import { useTexts } from "@/lib/hooks";
-import Layout from "@/components/layout";
+import Layout, { TopButton } from "@/components/layout";
 import { FeedbacksFunctions } from "@/components/PAGES/feedback/feedbacks";
 import { Feedbacks, AddFeedback, styles } from "@/components/PAGES/feedback";
 
@@ -36,6 +36,7 @@ export default function Feed() {
                     t={t}
                 />
             </Layout>
+            <TopButton t={t} />
         </>
     );
 }

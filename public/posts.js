@@ -13,6 +13,12 @@ const posts = {
     dvor: {
         tag: "",
     },
+    panorama: {
+        tag: "location",
+    },
+    video: {
+        tag: "location",
+    },
 };
 
 export default posts;

@@ -10,6 +10,7 @@ import LangSelector from "@/components/lang_selector";
 import CardView from "@/components/card_view/card_view";
 import Footer from "@/components/footer";
 import { getImage, getPostData, getPostText, PostData } from "@/lib/posts";
+import { TopButton } from "@/components/layout";
 
 interface IndexProps {
     posts: { [key: string]: PostData };
@@ -42,6 +43,8 @@ const Index: React.FC<IndexProps> = ({ posts }) => {
                 <CardView t={t} posts={posts} />
             </main>
             <Footer t={t} />
+
+            <TopButton t={t} />
         </>
     );
 };

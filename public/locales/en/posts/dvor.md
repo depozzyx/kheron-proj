@@ -27,3 +27,5 @@ You can run down the same street to and from work every day, and you don't know 
 You will learn:
 
 <ul> <li> how ordinary and "unusual" Kherson people lived; </li> <li> the history of street names and why not all the original names were returned; </li> <li> the meaning of some city signs and symbols; </ li > <li> you will find a Peruvian mask, a monogram of a baroness and a "radiant delta" with an eye (and this is not yet "Kherson de Mason"); </li> <li> how the front doors were built and why large windows face south; </ li > <li> where the marble and tiles in Kherson come from; </li> <li> what the eagle is silent about in the Comstadius lane and what the eagle knows about at the "Public Library"; </li> <li> where the Kherson "professor Preobrazhensky" lived ; </li> <li> why one hotel smelled like sausage and another liked to go on dates; </li> <li> you will see a marble spiral staircase with 3 flights. </li> </ul>
+
+More details - **[kherson-on.com](https://khers-on.com/tour/teatralizovannie-dvoriki)**

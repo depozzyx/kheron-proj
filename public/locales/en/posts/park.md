@@ -23,3 +23,5 @@ Despite the fact that this park was built during the Soviet Union, in the 60s, d
 </imgrow>
 
 But in the end you will see: a Ukrainian woman with a wreath and ribbons is standing, looking into the distance and, apparently, waiting for someone. She seems pretty cheerful. Closer, the monument seems even more grandiose and fits perfectly into the surrounding landscape. A beautiful view of the Dnieper and smooth ones opens from the platform nearby. The reeds from there were used to cover houses, build boats, fences, and they also became the main raw material for the Tsyurupinsky paper mill, which, unfortunately, is now closed. These smooth ones previously stretched to the Dnipropetrovsk region, until they built a hydroelectric power station and they were flooded by the largest reservoir - the Kakhovka Sea.
+
+More details - **[find-way.com](https://find-way.com.ua/ru/oblasti/khersonskaya/kherson/park-slavy-i-naberezhnaya-kherson)**

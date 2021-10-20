@@ -40,3 +40,5 @@ _ ** The central highway ** _ of the city bears the name of the great naval comm
 A monument to Ushakov was erected near the main building of the Kherson State Maritime Academy. In addition, other buildings of marine educational institutions can be seen on the avenue.
 
 There are many interesting old buildings and shopping centers along the avenue, and fountains will delight you on a summer day. It is interesting that not a single street crosses Ushakov Avenue - they all originate from it.
+
+More details - **[igotoworld.com](https://ua.igotoworld.com/ru/article/730_herson-kuda-poiti-chto-posmotret.htm)**

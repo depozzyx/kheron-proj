@@ -10,7 +10,7 @@ import { serverTexts } from "@/lib/texts_utils";
 import posts from "@/public/posts";
 import styles from "@/components/layout/layout.module.scss";
 import { getPostData, getPostText, PostData } from "@/lib/posts";
-import Layout from "@/components/layout";
+import Layout, { TopButton } from "@/components/layout";
 import { PostView } from "@/components/PAGES/post";
 
 interface PostProps {
@@ -18,10 +18,6 @@ interface PostProps {
     nextPostId: string;
     mdxSource: MDXRemoteSerializeResult | null;
 }
-
-// yw
-// 0
-// vep
 
 const Post: React.FC<PostProps> = ({
     post,
@@ -52,6 +48,7 @@ const Post: React.FC<PostProps> = ({
                     <PostView t={t} post_object={post} mdxSource={mdxSource} />
                 )}
             </Layout>
+            <TopButton t={t} />
         </>
     ) : (
         <>

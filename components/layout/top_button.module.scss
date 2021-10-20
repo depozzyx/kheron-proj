@@ -1,0 +1,13 @@
+@import "../../styles/globals";
+
+.top_button {
+    position: fixed;
+    top: 93%;
+    left: 50%;
+    padding: 10px 15px;
+
+    background-color: $col-blue;
+    color: $col-white;
+    border: 0;
+    border-radius: 10px;
+}

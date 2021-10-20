@@ -4,7 +4,7 @@
     },
     "header": {
         "title": "Херсон",
-        "subtitle": "мое мисто бла бла бла"
+        "subtitle": "моє місто"
     },
     "404": {
         "title": "404",
@@ -19,7 +19,8 @@
     "layout": {
         "back_button": "На головну",
         "title": "Херсон",
-        "next_button": "Наступний пост"
+        "next_button": "Наступний пост",
+        "to_top": "Догори"
     },
     "posts": {
         "page_title_prefix": "Пост - ",
